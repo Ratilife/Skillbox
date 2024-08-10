@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CalculationTypePredefinedItems" version="2.18">
+	<Item id="c2c132ea-ee8f-465d-a0ae-9450e53b1e4c">
+		<Name>Больничный</Name>
+		<Code>2</Code>
+		<Description>Больничный</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Base>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Оклад</CalculationType>
+		</Base>
+		<Displaced>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Отпуск</CalculationType>
+		</Displaced>
+	</Item>
+	<Item id="0b11ff7b-ab39-4fc9-a917-e407463b73ca">
+		<Name>Командировка</Name>
+		<Code>3</Code>
+		<Description>Командировка</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+	</Item>
+	<Item id="581e2f7e-54af-4bc9-bf9f-bd8c80554768">
+		<Name>Оклад</Name>
+		<Code>1</Code>
+		<Description>Оклад</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Displaced>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Больничный</CalculationType>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Командировка</CalculationType>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Отпуск</CalculationType>
+		</Displaced>
+	</Item>
+	<Item id="038f57aa-d098-440b-8c89-3b238126d855">
+		<Name>Отпуск</Name>
+		<Code>4</Code>
+		<Description>Отпуск</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+	</Item>
+</PredefinedData>

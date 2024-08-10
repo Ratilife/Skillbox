@@ -1,0 +1,758 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаИспользованиеЖурнала" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ИспользованиеЖурнала</CommandName>
+				<ExtendedTooltip name="ФормаИспользованиеЖурналаРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Button name="ВыгрузитьЖурнал" id="8">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ВыгрузитьЖурнал</CommandName>
+			<ExtendedTooltip name="ВыгрузитьЖурналРасширеннаяПодсказка" id="9"/>
+		</Button>
+		<InputField name="ПоступлениеТоваровИУслуг" id="3">
+			<DataPath>ПоступлениеТоваровИУслуг</DataPath>
+			<ContextMenu name="ПоступлениеТоваровИУслугКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ПоступлениеТоваровИУслугРасширеннаяПодсказка" id="5"/>
+		</InputField>
+		<Button name="ПолучитьАвтораДокумента" id="6">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПолучитьАвтораДокумента</CommandName>
+			<ExtendedTooltip name="ПолучитьАвтораДокументаРасширеннаяПодсказка" id="7"/>
+		</Button>
+		<InputField name="ПериодЖурнала" id="65">
+			<DataPath>ПериодЖурнала</DataPath>
+			<ContextMenu name="ПериодЖурналаКонтекстноеМеню" id="66"/>
+			<ExtendedTooltip name="ПериодЖурналаРасширеннаяПодсказка" id="67"/>
+			<Events>
+				<Event name="OnChange">ПериодЖурналаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="СобытиеДляОтбора" id="68">
+			<DataPath>СобытиеДляОтбора</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="СобытиеДляОтбораКонтекстноеМеню" id="69"/>
+			<ExtendedTooltip name="СобытиеДляОтбораРасширеннаяПодсказка" id="70"/>
+			<Events>
+				<Event name="StartChoice">СобытиеДляОтбораНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<Table name="Журнал" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Журнал</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЖурналКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ЖурналКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="ЖурналРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ЖурналСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>Журнал</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЖурналСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ЖурналСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЖурналСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>Журнал</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЖурналСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ЖурналСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЖурналУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>Журнал</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЖурналУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ЖурналУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ЖурналДанные" id="23">
+					<DataPath>Журнал.Данные</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналДанныеКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ЖурналДанныеРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ЖурналДата" id="26">
+					<DataPath>Журнал.Дата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналДатаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ЖурналДатаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ЖурналИмяПользователя" id="29">
+					<DataPath>Журнал.ИмяПользователя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналИмяПользователяКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ЖурналИмяПользователяРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ЖурналИмяПриложения" id="32">
+					<DataPath>Журнал.ИмяПриложения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналИмяПриложенияКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ЖурналИмяПриложенияРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ЖурналКомментарий" id="35">
+					<DataPath>Журнал.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналКомментарийКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ЖурналКомментарийРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ЖурналКомпьютер" id="38">
+					<DataPath>Журнал.Компьютер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналКомпьютерКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ЖурналКомпьютерРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ЖурналМетаданные" id="41">
+					<DataPath>Журнал.Метаданные</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналМетаданныеКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ЖурналМетаданныеРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ЖурналПользователь" id="44">
+					<DataPath>Журнал.Пользователь</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналПользовательКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ЖурналПользовательРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ЖурналПредставлениеДанных" id="47">
+					<DataPath>Журнал.ПредставлениеДанных</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналПредставлениеДанныхКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ЖурналПредставлениеДанныхРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ЖурналПредставлениеМетаданных" id="50">
+					<DataPath>Журнал.ПредставлениеМетаданных</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналПредставлениеМетаданныхКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ЖурналПредставлениеМетаданныхРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="ЖурналПредставлениеПриложения" id="53">
+					<DataPath>Журнал.ПредставлениеПриложения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналПредставлениеПриложенияКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ЖурналПредставлениеПриложенияРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="ЖурналПредставлениеСобытия" id="56">
+					<DataPath>Журнал.ПредставлениеСобытия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналПредставлениеСобытияКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ЖурналПредставлениеСобытияРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="ЖурналСеанс" id="59">
+					<DataPath>Журнал.Сеанс</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналСеансКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ЖурналСеансРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="ЖурналСобытие" id="62">
+					<DataPath>Журнал.Событие</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналСобытиеКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ЖурналСобытиеРасширеннаяПодсказка" id="64"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РаботаСЖурналомРегистрации</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПоступлениеТоваровИУслуг" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление товаров и услуг</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ПоступлениеТоваров</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Журнал" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал событий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ua</v8:lang>
+					<v8:content>Журнал подій</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Журнал подій</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru_RU</v8:lang>
+					<v8:content>Журнал событий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>#</v8:lang>
+					<v8:content>Журнал подій</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru1</v8:lang>
+					<v8:content>Журнал событий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Данные" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ua</v8:lang>
+							<v8:content>Дані </v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дані </v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Дані </v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Данные</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Дата" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ua</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяПользователя" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя пользователя</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ua</v8:lang>
+							<v8:content>Ім'я користувача</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ім'я користувача</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Имя пользователя</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Ім'я користувача</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Имя пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяПриложения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя приложения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ua</v8:lang>
+							<v8:content>Ім'я додатка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ім'я додатка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Имя приложения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Ім'я додатка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Имя приложения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ua</v8:lang>
+							<v8:content>Коментарі</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Коментарі</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Коментарі</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Компьютер" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компьютер</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ua</v8:lang>
+							<v8:content>Компьютер</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Компьютер</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Компьютер</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Компьютер</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Компьютер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Метаданные" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Метаданные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ua</v8:lang>
+							<v8:content>Метадані</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Метадані</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Метаданные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Метадані</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Метаданные</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пользователь" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ua</v8:lang>
+							<v8:content>Користувач</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Користувач</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Користувач</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеДанных" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление данных</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ua</v8:lang>
+							<v8:content>Представлення даних</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Представлення даних</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Представление данных</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Представлення даних</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Представление данных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеМетаданных" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление метаданных</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ua</v8:lang>
+							<v8:content>Представлення метаданих</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Представлення метаданих</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Представление метаданных</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Представлення метаданих</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Представление метаданных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеПриложения" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление приложения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ua</v8:lang>
+							<v8:content>Представление приложения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Представление приложения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Представление приложения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Представление приложения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Представление приложения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеСобытия" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление события</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ua</v8:lang>
+							<v8:content>Представление події</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Представление події</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Представление события</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Представление події</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Представление события</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сеанс" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сеанс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Сеанс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Сеанс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Событие" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Событие</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru_RU</v8:lang>
+							<v8:content>Событие</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru1</v8:lang>
+							<v8:content>Событие</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПериодЖурнала" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период журнала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СобытиеДляОтбора" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Событие для отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИспользованиеЖурнала" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использование журнала</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использование журнала</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИспользованиеЖурнала</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьАвтораДокумента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить автора документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить автора документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьАвтораДокумента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыгрузитьЖурнал" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить журнал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить журнал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьЖурнал</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

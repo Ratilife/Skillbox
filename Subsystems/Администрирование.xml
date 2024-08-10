@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Subsystem uuid="393b3bf8-a4af-49a4-943a-9071e8f40f05">
+		<Properties>
+			<Name>Администрирование</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администрирование</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.ОбщаяКартинка7</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьНесколькоСкладов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.НесколькоСкладов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СкладПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.РасчитатьСтоимостьАвтоматически</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.НесколькоВалют</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользованиеНесколькихВалют</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Администратор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВсеКонстанты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.СведенияОбОрганизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.НазваниеОрганизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.КодОргонизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СоздаватьВалютыАвтоматически</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ТокенДФС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.АдресСервераЭлектронногоКабинетаНалоговой</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПутьКФайлу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РаботаСКонстантами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ОтстрочкаПлатежа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Стандарты1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РаботаСПеречислениямиАдминистрированиеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.Пол</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыТранспортныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОплат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ДниНедели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОтправитьПоПочте</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СтавкапоБольничномуВДень</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПоискИОбработчикОжидания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонсольЗапросов_8_3</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СтавкаКоммандировки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РаботаСДокументами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПутьДляСохраненияДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РаботаСЖурналомРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РаботаСПравами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.КонтрагентRLS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДоступККонтрагентам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаЗапретаИзмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьОграничениеДоступаКДанным</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СписокДоступныхОрганизаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОграничениеДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДанныхИзТабличногоДокумента_УФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТестМодулей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Меню</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.ПланОбменаУниверсальныеОбменыДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбменДанными2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОбменДаннымиЗарегестрированные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СозданиеОбъекта_COM</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DataProcessor uuid="7c2f7cc0-a8a6-4468-bb6d-75d5498c3f7d">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.РаботаСЗапросами" category="Object">
+				<xr:TypeId>9df02718-d596-4b5a-9b99-cd373a9f3bf4</xr:TypeId>
+				<xr:ValueId>e8f30c13-d08e-4ff6-8e77-c2cc4d9ae800</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.РаботаСЗапросами" category="Manager">
+				<xr:TypeId>9e13ce2b-23b0-4f19-9b9f-ea49884cb60c</xr:TypeId>
+				<xr:ValueId>358302a8-b61e-442b-bb08-64a5752d2f0a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РаботаСЗапросами</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с запросами</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.РаботаСЗапросами.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Template>Макет1</Template>
+			<Template>Макет2</Template>
+			<Template>Макет3</Template>
+			<Template>Макет31</Template>
+			<Template>Макет5</Template>
+			<Template>Макет6</Template>
+			<Template>Макет7</Template>
+			<Template>Макет8</Template>
+			<Template>Макет9</Template>
+			<Template>Макет10</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

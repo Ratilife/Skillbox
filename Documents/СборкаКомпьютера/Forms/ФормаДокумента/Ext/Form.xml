@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПечать" id="24">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Печать</CommandName>
+				<ExtendedTooltip name="ФормаПечатьРасширеннаяПодсказка" id="26"/>
+			</Button>
+			<Button name="ФормаАнализЦен" id="25">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.АнализЦен</CommandName>
+				<ExtendedTooltip name="ФормаАнализЦенРасширеннаяПодсказка" id="27"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="28"/>
+		</InputField>
+		<InputField name="Дата" id="3">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="29"/>
+		</InputField>
+		<InputField name="Склад" id="5">
+			<DataPath>Объект.Склад</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СкладКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Мастер" id="7">
+			<DataPath>Объект.Мастер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МастерКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="МастерРасширеннаяПодсказка" id="31"/>
+		</InputField>
+		<InputField name="Продукция" id="9">
+			<DataPath>Объект.Продукция</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceParameters>
+				<app:item name="Отбор.СистемныйБлок">
+					<app:value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:boolean">true</Value>
+					</app:value>
+				</app:item>
+			</ChoiceParameters>
+			<ContextMenu name="ПродукцияКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ПродукцияРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<Table name="ПереченьНоменклатуры" id="11">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ПереченьНоменклатуры</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПереченьНоменклатурыКонтекстноеМеню" id="12"/>
+			<AutoCommandBar name="ПереченьНоменклатурыКоманднаяПанель" id="13"/>
+			<ExtendedTooltip name="ПереченьНоменклатурыРасширеннаяПодсказка" id="33"/>
+			<SearchStringAddition name="ПереченьНоменклатурыСтрокаПоиска" id="34">
+				<AdditionSource>
+					<Item>ПереченьНоменклатуры</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьНоменклатурыСтрокаПоискаКонтекстноеМеню" id="35"/>
+				<ExtendedTooltip name="ПереченьНоменклатурыСтрокаПоискаРасширеннаяПодсказка" id="36"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПереченьНоменклатурыСостояниеПросмотра" id="37">
+				<AdditionSource>
+					<Item>ПереченьНоменклатуры</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьНоменклатурыСостояниеПросмотраКонтекстноеМеню" id="38"/>
+				<ExtendedTooltip name="ПереченьНоменклатурыСостояниеПросмотраРасширеннаяПодсказка" id="39"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПереченьНоменклатурыУправлениеПоиском" id="40">
+				<AdditionSource>
+					<Item>ПереченьНоменклатуры</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьНоменклатурыУправлениеПоискомКонтекстноеМеню" id="41"/>
+				<ExtendedTooltip name="ПереченьНоменклатурыУправлениеПоискомРасширеннаяПодсказка" id="42"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПереченьНоменклатурыНомерСтроки" id="14">
+					<DataPath>Объект.ПереченьНоменклатуры.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьНоменклатурыНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПереченьНоменклатурыНомерСтрокиРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<InputField name="ПереченьНоменклатурыНоменклатура" id="16">
+					<DataPath>Объект.ПереченьНоменклатуры.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceParameters>
+						<app:item name="Отбор.СистемныйБлок">
+							<app:value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:boolean">true</Value>
+							</app:value>
+						</app:item>
+					</ChoiceParameters>
+					<ContextMenu name="ПереченьНоменклатурыНоменклатураКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПереченьНоменклатурыНоменклатураРасширеннаяПодсказка" id="44"/>
+				</InputField>
+				<InputField name="ПереченьНоменклатурыКоличество" id="18">
+					<DataPath>Объект.ПереченьНоменклатуры.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьНоменклатурыКоличествоКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ПереченьНоменклатурыКоличествоРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="ПереченьНоменклатурыЦена" id="20">
+					<DataPath>Объект.ПереченьНоменклатуры.Цена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьНоменклатурыЦенаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПереченьНоменклатурыЦенаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ПереченьНоменклатурыСумма" id="22">
+					<DataPath>Объект.ПереченьНоменклатуры.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьНоменклатурыСуммаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ПереченьНоменклатурыСуммаРасширеннаяПодсказка" id="47"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.СборкаКомпьютера</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Печать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать</Action>
+		</Command>
+		<Command name="АнализЦен" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анализ цен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анализ цен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АнализЦен</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccumulationRegister.СобранныеСБ.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

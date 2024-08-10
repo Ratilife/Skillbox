@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Организация" id="10">
+			<DataPath>Объект.Организация</DataPath>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Номенклатура" id="53">
+			<DataPath>Объект.Номенклатура</DataPath>
+			<ContextMenu name="НоменклатураКонтекстноеМеню" id="54"/>
+			<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="55"/>
+		</InputField>
+		<InputField name="Склад" id="7">
+			<DataPath>Объект.Склад</DataPath>
+			<ContextMenu name="СкладКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Характеристика" id="56">
+			<DataPath>Объект.Характеристика</DataPath>
+			<ContextMenu name="ХарактеристикаКонтекстноеМеню" id="57"/>
+			<ExtendedTooltip name="ХарактеристикаРасширеннаяПодсказка" id="58"/>
+		</InputField>
+		<Table name="ДвиженияОстаткиНаСкладе" id="59">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.RegisterRecords.ОстаткиНаСкладе</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДвиженияОстаткиНаСкладеКонтекстноеМеню" id="60"/>
+			<AutoCommandBar name="ДвиженияОстаткиНаСкладеКоманднаяПанель" id="61"/>
+			<ExtendedTooltip name="ДвиженияОстаткиНаСкладеРасширеннаяПодсказка" id="62"/>
+			<SearchStringAddition name="ДвиженияОстаткиНаСкладеСтрокаПоиска" id="63">
+				<AdditionSource>
+					<Item>ДвиженияОстаткиНаСкладе</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДвиженияОстаткиНаСкладеСтрокаПоискаКонтекстноеМеню" id="64"/>
+				<ExtendedTooltip name="ДвиженияОстаткиНаСкладеСтрокаПоискаРасширеннаяПодсказка" id="65"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДвиженияОстаткиНаСкладеСостояниеПросмотра" id="66">
+				<AdditionSource>
+					<Item>ДвиженияОстаткиНаСкладе</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДвиженияОстаткиНаСкладеСостояниеПросмотраКонтекстноеМеню" id="67"/>
+				<ExtendedTooltip name="ДвиженияОстаткиНаСкладеСостояниеПросмотраРасширеннаяПодсказка" id="68"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДвиженияОстаткиНаСкладеУправлениеПоиском" id="69">
+				<AdditionSource>
+					<Item>ДвиженияОстаткиНаСкладе</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДвиженияОстаткиНаСкладеУправлениеПоискомКонтекстноеМеню" id="70"/>
+				<ExtendedTooltip name="ДвиженияОстаткиНаСкладеУправлениеПоискомРасширеннаяПодсказка" id="71"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ДвиженияОстаткиНаСкладеНомерСтроки" id="72">
+					<DataPath>Объект.RegisterRecords.ОстаткиНаСкладе.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДвиженияОстаткиНаСкладеНомерСтрокиКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ДвиженияОстаткиНаСкладеНомерСтрокиРасширеннаяПодсказка" id="74"/>
+				</LabelField>
+				<InputField name="ДвиженияОстаткиНаСкладеПериод" id="75">
+					<DataPath>Объект.RegisterRecords.ОстаткиНаСкладе.Period</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДвиженияОстаткиНаСкладеПериодКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ДвиженияОстаткиНаСкладеПериодРасширеннаяПодсказка" id="77"/>
+				</InputField>
+				<InputField name="ДвиженияОстаткиНаСкладеВидДвижения" id="78">
+					<DataPath>Объект.RegisterRecords.ОстаткиНаСкладе.RecordType</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДвиженияОстаткиНаСкладеВидДвиженияКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="ДвиженияОстаткиНаСкладеВидДвиженияРасширеннаяПодсказка" id="80"/>
+				</InputField>
+				<InputField name="ДвиженияОстаткиНаСкладеНоменклатура" id="81">
+					<DataPath>Объект.RegisterRecords.ОстаткиНаСкладе.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДвиженияОстаткиНаСкладеНоменклатураКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ДвиженияОстаткиНаСкладеНоменклатураРасширеннаяПодсказка" id="83"/>
+				</InputField>
+				<InputField name="ДвиженияОстаткиНаСкладеСклады" id="84">
+					<DataPath>Объект.RegisterRecords.ОстаткиНаСкладе.Склады</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДвиженияОстаткиНаСкладеСкладыКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="ДвиженияОстаткиНаСкладеСкладыРасширеннаяПодсказка" id="86"/>
+				</InputField>
+				<InputField name="ДвиженияОстаткиНаСкладеХарактеристика" id="87">
+					<DataPath>Объект.RegisterRecords.ОстаткиНаСкладе.Характеристика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДвиженияОстаткиНаСкладеХарактеристикаКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="ДвиженияОстаткиНаСкладеХарактеристикаРасширеннаяПодсказка" id="89"/>
+				</InputField>
+				<InputField name="ДвиженияОстаткиНаСкладеКоличество" id="90">
+					<DataPath>Объект.RegisterRecords.ОстаткиНаСкладе.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДвиженияОстаткиНаСкладеКоличествоКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="ДвиженияОстаткиНаСкладеКоличествоРасширеннаяПодсказка" id="92"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.КорректировкаРегистров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

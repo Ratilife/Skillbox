@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаИерархияКлассов" id="15">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ИерархияКлассов</CommandName>
+				<ExtendedTooltip name="ФормаИерархияКлассовРасширеннаяПодсказка" id="16"/>
+			</Button>
+			<Button name="ФормаПолучитьБазу" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьБазу</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьБазуРасширеннаяПодсказка" id="10"/>
+			</Button>
+			<Button name="ФормаПолучитьБазу1" id="27">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьБазу1</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьБазу1РасширеннаяПодсказка" id="28"/>
+			</Button>
+			<Button name="ФормаПолучитьГрафик" id="6">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьГрафик</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьГрафикРасширеннаяПодсказка" id="11"/>
+			</Button>
+			<Button name="ФормаПолучитьБазуЗапросом" id="9">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьБазуЗапросом</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьБазуЗапросомРасширеннаяПодсказка" id="12"/>
+			</Button>
+			<Button name="ФормаПолучитьБазуЗапросом1" id="19">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьБазуЗапросом1</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьБазуЗапросом1РасширеннаяПодсказка" id="20"/>
+			</Button>
+			<Button name="ФормаПолучитьБазуПоНачислению" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьБазуПоНачислению</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьБазуПоНачислениюРасширеннаяПодсказка" id="18"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="НачислениеЗП" id="21">
+			<DataPath>НачислениеЗП</DataPath>
+			<ContextMenu name="НачислениеЗПКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="НачислениеЗПРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="РазовыеНачисления" id="24">
+			<DataPath>РазовыеНачисления</DataPath>
+			<ContextMenu name="РазовыеНачисленияКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="РазовыеНачисленияРасширеннаяПодсказка" id="26"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РегистрыРасчета</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="НачислениеЗП" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начисление ЗП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.НачислениеЗаработнойПлаты</v8:Type>
+			</Type>
+			<Save>
+				<Field>НачислениеЗП</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="РазовыеНачисления" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разовые начисления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.РегистрацияРазовыхНачислений</v8:Type>
+			</Type>
+			<Save>
+				<Field>РазовыеНачисления</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьБазу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить базу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить базу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьБазу</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьГрафик" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить график</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить график</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьГрафик</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьБазуЗапросом" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить базу запросом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить базу запросом</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьБазуЗапросом</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ИерархияКлассов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иерархия классов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иерархия классов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИерархияКлассов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьБазуПоНачислению" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить базу по начислению</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить базу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьБазуПоНачислению</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьБазуЗапросом1" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить базу запросом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить базу запросом</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьБазуЗапросом1</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьБазу1" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить базу1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить базу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьБазу1</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

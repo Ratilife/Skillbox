@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DataProcessor uuid="c98875a4-536e-439a-bf5c-96867969abe5">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.РаботаСРегистрамиБухгалтерии" category="Object">
+				<xr:TypeId>41c61d07-7208-4e2b-8865-ef4f9ab090b0</xr:TypeId>
+				<xr:ValueId>3e57dfa8-984b-49a6-8752-ad5b55e02482</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.РаботаСРегистрамиБухгалтерии" category="Manager">
+				<xr:TypeId>e1574a96-1772-407d-ae22-72c0efc6af91</xr:TypeId>
+				<xr:ValueId>9a646f0a-c012-4115-9654-6158b3be9d4d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РаботаСРегистрамиБухгалтерии</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с регистрами бухгалтерии</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.РаботаСРегистрамиБухгалтерии.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Template>Макет</Template>
+			<Template>Макет1</Template>
+			<Template>Макет2</Template>
+			<Template>Макет3</Template>
+			<Template>Макет23</Template>
+			<Template>Макет12</Template>
+			<Template>Макет123</Template>
+			<Template>Макетпс</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

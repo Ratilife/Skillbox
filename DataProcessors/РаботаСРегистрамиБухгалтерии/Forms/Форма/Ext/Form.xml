@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОстаток" id="5">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Остаток</CommandName>
+				<ExtendedTooltip name="ФормаОстатокРасширеннаяПодсказка" id="6"/>
+			</Button>
+			<Button name="ФормаОстатокНаДату" id="9">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОстатокНаДату</CommandName>
+				<ExtendedTooltip name="ФормаОстатокНаДатуРасширеннаяПодсказка" id="10"/>
+			</Button>
+			<Button name="ФормаОстатокПоВидуСубконто" id="14">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОстатокПоВидуСубконто</CommandName>
+				<ExtendedTooltip name="ФормаОстатокПоВидуСубконтоРасширеннаяПодсказка" id="15"/>
+			</Button>
+			<Button name="ФормаОборотыПоСчету" id="16">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОборотыПоСчету</CommandName>
+				<ExtendedTooltip name="ФормаОборотыПоСчетуРасширеннаяПодсказка" id="17"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<CommandBar name="Группа1" id="23">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="24"/>
+			<ChildItems>
+				<Button name="ФормаПредставлениеПолей" id="18">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ПредставлениеПолей</CommandName>
+					<ExtendedTooltip name="ФормаПредставлениеПолейРасширеннаяПодсказка" id="19"/>
+				</Button>
+				<Button name="ПримерЗамераПроизводительности" id="25">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ПримерЗамераПроизводительности</CommandName>
+					<ExtendedTooltip name="ПримерЗамераПроизводительностиРасширеннаяПодсказка" id="26"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<InputField name="Счет" id="1">
+			<DataPath>Счет</DataPath>
+			<ContextMenu name="СчетКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="СчетРасширеннаяПодсказка" id="7"/>
+		</InputField>
+		<InputField name="Дата" id="3">
+			<DataPath>Дата</DataPath>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="8"/>
+		</InputField>
+		<InputField name="Товар" id="11">
+			<DataPath>Товар</DataPath>
+			<ContextMenu name="ТоварКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ТоварРасширеннаяПодсказка" id="13"/>
+		</InputField>
+		<SpreadSheetDocumentField name="ТабДок" id="20">
+			<DataPath>ТабДок</DataPath>
+			<VerticalScrollBar>true</VerticalScrollBar>
+			<HorizontalScrollBar>true</HorizontalScrollBar>
+			<ContextMenu name="ТабДокКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="22"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РаботаСРегистрамиБухгалтерии</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Дата" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Счет" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Счет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Товар" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товар</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТабДок" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Остаток" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Остаток</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОстатокНаДату" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток на дату</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток на дату</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОстатокНаДату</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОстатокПоВидуСубконто" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток по виду субконто</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток по виду субконто</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОстатокПоВидуСубконто</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОборотыПоСчету" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обороты по счету</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обороты по счету</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОборотыПоСчету</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПредставлениеПолей" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление полей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление полей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПредставлениеПолей</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Представление" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Представление</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПримерЗамераПроизводительности" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пример замера производительности</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пример замера производительности</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПримерЗамераПроизводительности</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВывестиПеречисление" id="16">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ВывестиПеречисление</CommandName>
+				<ExtendedTooltip name="ФормаВывестиПеречислениеРасширеннаяПодсказка" id="17"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="Группа3" id="39">
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<Button name="ФормаПоказатьНомерДняНедели" id="34">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ПоказатьНомерДняНедели</CommandName>
+					<ExtendedTooltip name="ФормаПоказатьНомерДняНеделиРасширеннаяПодсказка" id="35"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<CommandBar name="Группа2" id="32">
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="33"/>
+		</CommandBar>
+		<InputField name="ПризнакКлиента" id="1">
+			<DataPath>ПризнакКлиента</DataPath>
+			<ContextMenu name="ПризнакКлиентаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПризнакКлиентаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<Button name="ПроверкаПрав" id="6">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПроверкаПрав</CommandName>
+			<ExtendedTooltip name="ПроверкаПравРасширеннаяПодсказка" id="7"/>
+		</Button>
+		<Button name="ДемонстрацияНарушенияПрав" id="14">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ДемонстрацияНарушенияПрав</CommandName>
+			<ExtendedTooltip name="ДемонстрацияНарушенияПравРасширеннаяПодсказка" id="15"/>
+		</Button>
+		<Button name="ПроверкаДоступностиРоли" id="8">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПроверкаДоступностиРоли</CommandName>
+			<ExtendedTooltip name="ПроверкаДоступностиРолиРасширеннаяПодсказка" id="9"/>
+		</Button>
+		<UsualGroup name="Группа1" id="18">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<InputField name="Имя" id="20">
+					<DataPath>Имя</DataPath>
+					<ContextMenu name="ИмяКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ИмяРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ПолноеИмя" id="23">
+					<DataPath>ПолноеИмя</DataPath>
+					<ContextMenu name="ПолноеИмяКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ПолноеИмяРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<Button name="ПользователиИБ" id="10">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПользователиИБ</CommandName>
+					<ExtendedTooltip name="ПользователиИБРасширеннаяПодсказка" id="11"/>
+				</Button>
+				<Button name="ПоказатьНаименованиеДняНедели" id="41">
+					<Type>UsualButton</Type>
+					<Width>3</Width>
+					<CommandName>Form.Command.ПоказатьНаименованиеДняНедели</CommandName>
+					<ExtendedTooltip name="ПоказатьНаименованиеДняНеделиРасширеннаяПодсказка" id="42"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="ПоказыватьКоманду" id="36">
+			<DataPath>ПоказыватьКоманду</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПоказыватьКомандуКонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="ПоказыватьКомандуРасширеннаяПодсказка" id="38"/>
+			<Events>
+				<Event name="OnChange">ПоказыватьКомандуПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РаботаСПеречислениямиАдминистрированиеПрава</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПризнакКлиента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признак клиента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ПризнакКлиента</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолноеИмя" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное имя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Имя" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказыватьКоманду" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать команду</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВывестиПеречисление" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести перечисление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести перечисление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВывестиПеречисление</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверкаПрав" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка прав</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка прав</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверкаПрав</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверкаДоступностиРоли" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка доступности роли</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка доступности роли</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверкаДоступностиРолиНаша</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПользователиИБ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователи ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователи ИБ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПользователиИБ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДемонстрацияНарушенияПрав" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Демонстрация нарушения прав</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Демонстрация нарушения прав</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДемонстрацияНарушенияПрав</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоказатьНаименованиеДняНедели" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать наименование дня недели</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать наименование дня недели</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Shift+Z</Shortcut>
+			<Action>ПоказатьНаименованиеДняНедели</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПоказатьНомерДняНедели" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать номер дня недели</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать номер дня недели</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Alt+Shift+R</Shortcut>
+			<Action>ПоказатьНомерДняНедели</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

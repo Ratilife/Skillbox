@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="43">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<InputField name="ВидНоменклатуры" id="24">
+					<DataPath>Объект.ВидНоменклатуры</DataPath>
+					<ContextMenu name="ВидНоменклатурыКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ВидНоменклатурыРасширеннаяПодсказка" id="26"/>
+				</InputField>
+				<CheckBoxField name="СистемныйБлок" id="45">
+					<DataPath>Объект.СистемныйБлок</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СистемныйБлокКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="СистемныйБлокРасширеннаяПодсказка" id="47"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаЗакладки" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закладки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа закладки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаЗакладкиРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<Page name="ГруппаОбщаяИнформация" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общая информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа общая информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОбщаяИнформацияРасширеннаяПодсказка" id="21"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКодНаименование" id="16">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа код наименование</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа код наименование</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="17"/>
+							<ChildItems>
+								<InputField name="Код" id="1">
+									<DataPath>Объект.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="Артикул" id="27">
+									<DataPath>Объект.Артикул</DataPath>
+									<ContextMenu name="АртикулКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="АртикулРасширеннаяПодсказка" id="29"/>
+									<Events>
+										<Event name="OnChange">АртикулПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="Наименование" id="4">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Склад" id="7">
+							<DataPath>Объект.Склад</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СкладКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="Партия" id="30">
+							<DataPath>Объект.Партия</DataPath>
+							<ContextMenu name="ПартияКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ПартияРасширеннаяПодсказка" id="32"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаЦены" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цены</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа цены</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаЦеныРасширеннаяПодсказка" id="23"/>
+					<ChildItems>
+						<InputField name="ЦенаЗакупочная" id="10">
+							<DataPath>Объект.ЦенаЗакупочная</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЦенаЗакупочнаяКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ЦенаЗакупочнаяРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="ЦенаПоступления" id="13">
+							<DataPath>Объект.ЦенаПоступления</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЦенаПоступленияКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ЦенаПоступленияРасширеннаяПодсказка" id="15"/>
+							<Events>
+								<Event name="OnChange">ЦенаПоступленияПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаРегистры" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регистры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРегистрыРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКнопки" id="41">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="42"/>
+							<ChildItems>
+								<Button name="Купить1КГ" id="35">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.Купить1КГ</CommandName>
+									<ExtendedTooltip name="Купить1КГРасширеннаяПодсказка" id="36"/>
+								</Button>
+								<Button name="Купить2КГ" id="37">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.Купить2КГ</CommandName>
+									<ExtendedTooltip name="Купить2КГРасширеннаяПодсказка" id="38"/>
+								</Button>
+								<Button name="Купить3КГ" id="39">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.Купить3КГ</CommandName>
+									<ExtendedTooltip name="Купить3КГРасширеннаяПодсказка" id="40"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Номенклатура</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ОтображатьЦену" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать цену</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Купить1КГ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Купить1 КГ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Купить1 КГ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Купить1КГ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Купить2КГ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Купить2 КГ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Купить1 КГ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Купить2КГ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Купить3КГ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Купить3 КГ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Купить1 КГ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Купить3КГ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>FilterCriterion.ДокументыСНоменклатурой.StandardCommand.OpenByValue</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>true</xr:Common>
+					<xr:Value name="Role.Администратор">true</xr:Value>
+					<xr:Value name="Role.Кладовщик">true</xr:Value>
+					<xr:Value name="Role.ЗаведующийМагазином">true</xr:Value>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

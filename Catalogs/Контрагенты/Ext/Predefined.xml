@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="d9f550ae-bc4b-4740-b3b2-0eafcbcf32ff">
+		<Name>Покупатели</Name>
+		<Code>000000002</Code>
+		<Description>Покупатели</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="1c4754ad-d7db-4d4f-b370-7872b46828c5">
+				<Name>ЭталонныйПокупатель</Name>
+				<Code>000000004</Code>
+				<Description>Эталонный покупатель</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="24811929-7f28-4e85-a426-8e8516870617">
+		<Name>Поставщики</Name>
+		<Code>000000001</Code>
+		<Description>Поставщики</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="4d2742ae-01a7-4535-85b7-562936ebe138">
+				<Name>ЭталонныйПоставщик</Name>
+				<Code>000000003</Code>
+				<Description>Эталонный поставщик</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="e9892d4a-c541-469f-a2fb-665d9642395e">
+		<Name>ЧастноеЛицо</Name>
+		<Code>000000010</Code>
+		<Description>Частное лицо</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

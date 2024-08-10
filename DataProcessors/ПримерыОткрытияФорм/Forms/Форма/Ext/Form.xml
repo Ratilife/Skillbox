@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Товар1" id="9">
+			<DataPath>Товар</DataPath>
+			<ContextMenu name="Товар1КонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="Товар1РасширеннаяПодсказка" id="11"/>
+		</InputField>
+		<InputField name="Артикул1" id="12">
+			<DataPath>Артикул</DataPath>
+			<ContextMenu name="Артикул1КонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="Артикул1РасширеннаяПодсказка" id="14"/>
+		</InputField>
+		<Button name="ОткрытьТовар" id="1">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОткрытьТовар</CommandName>
+			<ExtendedTooltip name="ОткрытьТоварРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<InputField name="Товар" id="3">
+			<DataPath>1/0:4ccf4f72-b15a-4dcb-8779-2ef84f767f56</DataPath>
+			<ContextMenu name="ТоварКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ТоварРасширеннаяПодсказка" id="5"/>
+		</InputField>
+		<InputField name="Артикул" id="6">
+			<DataPath>1/0:f8631cec-728d-4d18-98cd-b7935771e4a2</DataPath>
+			<ContextMenu name="АртикулКонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="АртикулРасширеннаяПодсказка" id="8"/>
+		</InputField>
+		<CheckBoxField name="ОтображатьЦены" id="17">
+			<DataPath>ОтображатьЦену</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтображатьЦеныКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="ОтображатьЦеныРасширеннаяПодсказка" id="19"/>
+		</CheckBoxField>
+		<CheckBoxField name="ДоступностьПартии" id="20">
+			<DataPath>ДоступностьПартии</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ДоступностьПартииКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="ДоступностьПартииРасширеннаяПодсказка" id="22"/>
+		</CheckBoxField>
+		<Button name="ОткрытьСПараметрами" id="15">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОткрытьСПараметрами</CommandName>
+			<ExtendedTooltip name="ОткрытьСПараметрамиРасширеннаяПодсказка" id="16"/>
+		</Button>
+		<Button name="ОткрытьСписокТоваров" id="23">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОткрытьСписокТоваров</CommandName>
+			<ExtendedTooltip name="ОткрытьСписокТоваровРасширеннаяПодсказка" id="24"/>
+		</Button>
+		<Button name="ОткрытьФормуКонстант" id="25">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОткрытьФормуКонстант</CommandName>
+			<ExtendedTooltip name="ОткрытьФормуКонстантРасширеннаяПодсказка" id="26"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПримерыОткрытияФорм</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Товар" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товар</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Артикул" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Артикул</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>15</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтображатьЦену" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать цену</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДоступностьПартии" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступность партии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьТовар" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть товар</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть товар</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьТовар</Action>
+		</Command>
+		<Command name="НайтиПоРеквизитуИОткрытьТовар" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти по реквизиту и открыть товар</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти по реквизиту и открыть товар</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиПоРеквизитуИОткрытьТовар</Action>
+		</Command>
+		<Command name="ОткрытьСПараметрами" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть с параметрами</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть с параметрами</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСПараметрами</Action>
+		</Command>
+		<Command name="ОткрытьСписокТоваров" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список товаров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список товаров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСписокТоваров</Action>
+		</Command>
+		<Command name="ОткрытьФормуКонстант" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму констант</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму констант</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФормуКонстант</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Subsystem uuid="4cd2f3a9-31fe-47d1-9e95-6773feaad0f9">
+		<Properties>
+			<Name>ЗарплатаИКадры</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарплата и кадры</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ГрафикиРаботы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеЗарплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CalculationRegister.ОсновныеНачисления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCalculationTypes.ОсновныеНачисления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗаполнениеГрафика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыГрафиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыРасчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCalculationTypes.ДополнительныеНачисления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCalculationTypes.ОсновныеНачисления1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCalculationTypes.Удержания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыВидовРасчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриемНаРаботу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КадровоеПеремещение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Увольнение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеЗаработнойПлаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РегистрыРасчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РегистрацияРазовыхНачислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РасчетнаяВедомость1507</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РасчетнаяВедомость</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РасчетнаяВедомость0204</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РасчетныеЛистки1507</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РасчетныеЛистки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РасчетныеЛистки0204</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CalculationRegister.ОсновныеНачисленияСторнирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCalculationTypes.ОсновноеНачислениеСторнирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеЗаработнойПлатыСторнирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОСотрудникахИзменениеОклада</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеЗарплатыИзменениеОклада</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCalculationTypes.ОсновноеНачислениеИзменениеОклада</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CalculationRegister.ОсновноеНачислениеИзменениеОклада</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПерерасчетЗарплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеЗаработнойПлатыПроцентОтПродажиТовара</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ПродажиПроцентОтПродажиТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCalculationTypes.ДополнительныеНачисленияПроцентОтПродажиТовара</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CalculationRegister.ДополнительныеНачисленияПроцентОтПродажиТовара</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

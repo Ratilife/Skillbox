@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ВыводКонтрагентов" id="4">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыводКонтрагентов</CommandName>
+				<ExtendedTooltip name="ВыводКонтрагентовРасширеннаяПодсказка" id="5"/>
+			</Button>
+			<Button name="ЧастныеЛица" id="6">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЧастныеЛица</CommandName>
+				<ExtendedTooltip name="ЧастныеЛицаРасширеннаяПодсказка" id="7"/>
+			</Button>
+			<Button name="ФормаКоличествоРазличныхТоваров" id="8">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КоличествоРазличныхТоваров</CommandName>
+				<ExtendedTooltip name="ФормаКоличествоРазличныхТоваровРасширеннаяПодсказка" id="9"/>
+			</Button>
+			<Button name="ФормаВыбратьТовары" id="10">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыбратьТовары</CommandName>
+				<ExtendedTooltip name="ФормаВыбратьТоварыРасширеннаяПодсказка" id="11"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<CommandBar name="ГруппаДляКнопок" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа для кнопок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа для кнопок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаДляКнопокРасширеннаяПодсказка" id="13"/>
+			<ChildItems>
+				<Button name="ТоварыИзДокументаПоступления" id="14">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ТоварыИзДокументаПоступления</CommandName>
+					<ExtendedTooltip name="ТоварыИзДокументаПоступленияРасширеннаяПодсказка" id="15"/>
+				</Button>
+				<Button name="КоличествоПоставщиковПоТовару" id="16">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.КоличествоПоставщиковПоТовару</CommandName>
+					<ExtendedTooltip name="КоличествоПоставщиковПоТоваруРасширеннаяПодсказка" id="17"/>
+				</Button>
+				<Button name="КоличествоРазличныхТоваров" id="18">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.КоличествоРазличныхТоваров</CommandName>
+					<ExtendedTooltip name="КоличествоРазличныхТоваровРасширеннаяПодсказка" id="19"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<CommandBar name="ГруппаДляКнопок1" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа для кнопок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа для кнопок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаДляКнопок1РасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<Button name="ПоследняяДатаПрихода" id="20">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ПоследняяДатаПрихода</CommandName>
+					<ExtendedTooltip name="ПоследняяДатаПриходаРасширеннаяПодсказка" id="21"/>
+				</Button>
+				<Button name="МинМахЦены" id="24">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.МинМахЦены</CommandName>
+					<ExtendedTooltip name="МинМахЦеныРасширеннаяПодсказка" id="25"/>
+				</Button>
+				<Button name="ДанныеПоРеализации" id="26">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ДанныеПоРеализации</CommandName>
+					<ExtendedTooltip name="ДанныеПоРеализацииРасширеннаяПодсказка" id="27"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<SpreadSheetDocumentField name="ТабДок" id="1">
+			<DataPath>ТабДок</DataPath>
+			<ContextMenu name="ТабДокКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="3"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РаботаСЗапросами</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТабДок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыводКонтрагентов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывод контрагентов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывод контрагентов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыводКонтрагентов</Action>
+		</Command>
+		<Command name="ЧастныеЛица" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Частные лица</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Частные лица</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЧастныеЛица</Action>
+		</Command>
+		<Command name="КоличествоРазличныхТоваров" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество различных товаров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество различных товаров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КоличествоРазличныхТоваров</Action>
+		</Command>
+		<Command name="ВыбратьТовары" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать товары</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать товары</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьТовары</Action>
+		</Command>
+		<Command name="ТоварыИзДокументаПоступления" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары из документа поступления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары из документа поступления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТоварыИзДокументаПоступления</Action>
+		</Command>
+		<Command name="КоличествоПоставщиковПоТовару" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество поставщиков по товару</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество поставщиков по товару</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КоличествоПоставщиковПоТовару</Action>
+		</Command>
+		<Command name="КоличествоРазлчныхТоваровПоПоставщикам" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество разлчных товаров по поставщикам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество разлчных товаров по поставщикам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КоличествоРазлчныхТоваровПоПоставщикам</Action>
+		</Command>
+		<Command name="ПоследняяДатаПрихода" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последняя дата прихода</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последняя дата прихода</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоследняяДатаПрихода</Action>
+		</Command>
+		<Command name="МинМахЦены" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мин мах цены</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мин мах цены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>МинМахЦены</Action>
+		</Command>
+		<Command name="ДанныеПоРеализации" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные по реализации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные по реализации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДанныеПоРеализации</Action>
+		</Command>
+	</Commands>
+</Form>

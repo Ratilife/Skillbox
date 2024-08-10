@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ПоступлениеТоваровИУслуг" id="3">
+			<DataPath>ПоступлениеТоваровИУслуг</DataPath>
+			<ContextMenu name="ПоступлениеТоваровИУслугКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ПоступлениеТоваровИУслугРасширеннаяПодсказка" id="5"/>
+		</InputField>
+		<Button name="КомандаМоментВремени" id="6">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.КомандаМоментВремени</CommandName>
+			<ExtendedTooltip name="КомандаМоментВремениРасширеннаяПодсказка" id="7"/>
+		</Button>
+		<Button name="РаботаСДокументами" id="1">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.РаботаСДокументами</CommandName>
+			<ExtendedTooltip name="РаботаСДокументамиРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<Button name="ВывестиСуммуПрописью" id="8">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ВывестиСуммуПрописью</CommandName>
+			<ExtendedTooltip name="ВывестиСуммуПрописьюРасширеннаяПодсказка" id="9"/>
+		</Button>
+		<InputField name="Сумма" id="10">
+			<DataPath>Сумма</DataPath>
+			<ContextMenu name="СуммаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="OnChange">СуммаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="РН" id="13">
+			<DataPath>РН</DataPath>
+			<ContextMenu name="РНКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="РНРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ПериодВыборки" id="16">
+			<DataPath>ПериодВыборки</DataPath>
+			<ContextMenu name="ПериодВыборкиКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ПериодВыборкиРасширеннаяПодсказка" id="18"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РаботаСДокументами</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПоступлениеТоваровИУслуг" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление товаров и услуг</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Сумма" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РН" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>РН</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПериодВыборки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период выборки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РаботаСДокументами" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с документами</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с документами</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РаботаСДокументами</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаМоментВремени" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда момент времени</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда момент времени</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаМоментВремени</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВывестиСуммуПрописью" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести сумму прописью</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести сумму прописью</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВывестиСуммуПрописью</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьДокументыЗаПериод" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать документы за период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать документы за период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьДокументыЗаПериод</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

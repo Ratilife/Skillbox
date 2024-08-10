@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DataProcessor uuid="9e5fc7e0-98a0-4d7a-8b88-9aa8ffd76780">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ПростыеЗапросы" category="Object">
+				<xr:TypeId>9d29e43c-f0da-485f-9deb-ec20e43617bc</xr:TypeId>
+				<xr:ValueId>52d2747a-9de0-449e-bd59-ffe6e527f00d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ПростыеЗапросы" category="Manager">
+				<xr:TypeId>c65f1010-e367-4ce1-9080-a1b24447f31f</xr:TypeId>
+				<xr:ValueId>ff41009b-0a0b-4d21-84ca-369b896d6b89</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПростыеЗапросы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Простые запросы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.ПростыеЗапросы.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Template>Макет</Template>
+			<Template>Макет1</Template>
+			<Template>Макет34</Template>
+			<Template>Макетнаш1</Template>
+			<Template>Макет2</Template>
+			<Template>Макет5</Template>
+			<Template>Макет6</Template>
+			<Template>МакетИтоги</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

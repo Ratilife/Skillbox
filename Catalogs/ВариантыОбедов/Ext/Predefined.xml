@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="97f021af-423b-4711-bcf9-2fa3582c2824">
+		<Name>Куритца</Name>
+		<Code>000000003</Code>
+		<Description>Куритца</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ad2ebd96-3f05-4609-85c0-f98a4efb73c3">
+		<Name>Мясо</Name>
+		<Code>000000002</Code>
+		<Description>Мясо</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d185b463-9152-4cef-aa5e-c7f5663a40ff">
+		<Name>Рыба</Name>
+		<Code>000000001</Code>
+		<Description>Рыба</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

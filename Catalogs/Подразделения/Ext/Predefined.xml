@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="496baca4-5598-489d-a2f8-8082f2f31f84">
+		<Name>Бухгалтерия</Name>
+		<Code>000000001</Code>
+		<Description>Бухгалтерия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cb0797bb-f6eb-4571-a6ee-4adb48047085">
+		<Name>ОтделПродаж</Name>
+		<Code>000000003</Code>
+		<Description>Отдел продаж</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9a6dfa36-4e2a-422d-b3a7-0b1d59484518">
+		<Name>Секретариат</Name>
+		<Code>000000002</Code>
+		<Description>Секретариат</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

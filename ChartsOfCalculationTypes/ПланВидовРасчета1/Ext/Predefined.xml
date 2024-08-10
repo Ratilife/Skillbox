@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CalculationTypePredefinedItems" version="2.18">
+	<Item id="6fb9df7d-5791-4a18-948b-9ed4cc9e1f72">
+		<Name>Больничный</Name>
+		<Code>103</Code>
+		<Description>Больничный</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Base>
+			<CalculationType>ChartOfCalculationTypes.ПланВидовРасчета1.Оклад</CalculationType>
+			<CalculationType>ChartOfCalculationTypes.ПланВидовРасчета1.Премия</CalculationType>
+		</Base>
+	</Item>
+	<Item id="958187c6-0981-4f66-83d5-d15606056b64">
+		<Name>Оклад</Name>
+		<Code>101</Code>
+		<Description>Оклад</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Displaced>
+			<CalculationType>ChartOfCalculationTypes.ПланВидовРасчета1.Больничный</CalculationType>
+			<CalculationType>ChartOfCalculationTypes.ПланВидовРасчета1.Прогул</CalculationType>
+		</Displaced>
+	</Item>
+	<Item id="02bc42d7-3185-446c-aa37-e1fe206fd5b6">
+		<Name>Премия</Name>
+		<Code>102</Code>
+		<Description>Премия</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Base>
+			<CalculationType>ChartOfCalculationTypes.ПланВидовРасчета1.Больничный</CalculationType>
+			<CalculationType>ChartOfCalculationTypes.ПланВидовРасчета1.Оклад</CalculationType>
+			<CalculationType>ChartOfCalculationTypes.ПланВидовРасчета1.Премия</CalculationType>
+		</Base>
+	</Item>
+	<Item id="df770cea-0ef1-429c-9649-d3fe46acddc9">
+		<Name>Прогул</Name>
+		<Code>105</Code>
+		<Description>Прогул</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+	</Item>
+	<Item id="9301a35d-196a-4a87-8966-24ae95a3618a">
+		<Name>Тест4</Name>
+		<Code>104</Code>
+		<Description>Тест4</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Base>
+			<CalculationType>ChartOfCalculationTypes.ПланВидовРасчета1.Оклад</CalculationType>
+			<CalculationType>ChartOfCalculationTypes.ПланВидовРасчета1.Премия</CalculationType>
+		</Base>
+	</Item>
+</PredefinedData>

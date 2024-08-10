@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПросмотрСтруктурыБазы" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПросмотрСтруктурыБазы</CommandName>
+				<ExtendedTooltip name="ФормаПросмотрСтруктурыБазыРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Pages name="Группа5" id="49">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<Page name="Начало" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НачалоРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="32">
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="33"/>
+							<ChildItems>
+								<Button name="ВыбратьКурсы" id="66">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВыбратьКурсы</CommandName>
+									<ExtendedTooltip name="ВыбратьКурсыРасширеннаяПодсказка" id="67"/>
+								</Button>
+								<Button name="ЗаписатьКурс" id="21">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗаписатьКурс</CommandName>
+									<ExtendedTooltip name="ЗаписатьКурсРасширеннаяПодсказка" id="22"/>
+								</Button>
+								<Button name="ЗаписатьКурсМенеджер" id="25">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗаписатьКурсМенеджер</CommandName>
+									<ExtendedTooltip name="ЗаписатьКурсМенеджерРасширеннаяПодсказка" id="26"/>
+								</Button>
+								<Button name="ПоказатьКурс" id="23">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПоказатьКурс</CommandName>
+									<ExtendedTooltip name="ПоказатьКурсРасширеннаяПодсказка" id="24"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа1" id="30">
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="31"/>
+							<ChildItems>
+								<InputField name="Валюта" id="12">
+									<DataPath>Валюта</DataPath>
+									<ContextMenu name="ВалютаКонтекстноеМеню" id="13"/>
+									<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="14"/>
+								</InputField>
+								<Button name="ОткытьСписокВалют" id="79">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОткытьСписокВалют</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Открыть список валют</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОткытьСписокВалютРасширеннаяПодсказка" id="80"/>
+								</Button>
+								<InputField name="НаДату" id="15">
+									<DataPath>НаДату</DataPath>
+									<ContextMenu name="НаДатуКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="НаДатуРасширеннаяПодсказка" id="17"/>
+								</InputField>
+								<InputField name="Курс" id="18">
+									<DataPath>Курс</DataPath>
+									<ContextMenu name="КурсКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="КурсРасширеннаяПодсказка" id="20"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа7" id="86">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="87"/>
+							<ChildItems>
+								<Button name="УдалитьВсеКурсыПоВыбраннойВалюте" id="88">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УдалитьВсеКурсыПоВыбраннойВалюте</CommandName>
+									<ExtendedTooltip name="УдалитьВсеКурсыПоВыбраннойВалютеРасширеннаяПодсказка" id="89"/>
+								</Button>
+								<Button name="ОчиститьРегистр" id="77">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОчиститьРегистр</CommandName>
+									<ExtendedTooltip name="ОчиститьРегистрРасширеннаяПодсказка" id="78"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ПерепрповестиРеализ" id="10">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПерепрповестиРеализ</CommandName>
+							<ExtendedTooltip name="ПерепрповестиРеализРасширеннаяПодсказка" id="11"/>
+						</Button>
+						<UsualGroup name="Группа4" id="38">
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="39"/>
+							<ChildItems>
+								<InputField name="ВыбТовар" id="27">
+									<DataPath>ВыбТовар</DataPath>
+									<ContextMenu name="ВыбТоварКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="ВыбТоварРасширеннаяПодсказка" id="29"/>
+								</InputField>
+								<Button name="ВыбратьПоРегистру" id="40">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВыбратьПоРегистру</CommandName>
+									<ExtendedTooltip name="ВыбратьПоРегиструРасширеннаяПодсказка" id="41"/>
+								</Button>
+								<Button name="СрезПервыхПоТовару" id="42">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СрезПервыхПоТовару</CommandName>
+									<ExtendedTooltip name="СрезПервыхПоТоваруРасширеннаяПодсказка" id="43"/>
+								</Button>
+								<Button name="СрезПоследнихпоТовару" id="44">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СрезПоследнихпоТовару</CommandName>
+									<ExtendedTooltip name="СрезПоследнихпоТоваруРасширеннаяПодсказка" id="45"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Период" id="46">
+							<DataPath>Период</DataPath>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="48"/>
+						</InputField>
+						<UsualGroup name="Группа6" id="73">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="74"/>
+							<ChildItems>
+								<Button name="ПроведениеВМодулеДокумента" id="8">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПроведениеВМодулеДокумента</CommandName>
+									<ExtendedTooltip name="ПроведениеВМодулеДокументаРасширеннаяПодсказка" id="9"/>
+								</Button>
+								<Button name="ЗаписатьДокументы" id="71">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗаписатьДокументы</CommandName>
+									<ExtendedTooltip name="ЗаписатьДокументыРасширеннаяПодсказка" id="72"/>
+								</Button>
+								<Button name="ПереформироватьДвижения" id="75">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПереформироватьДвижения</CommandName>
+									<ExtendedTooltip name="ПереформироватьДвиженияРасширеннаяПодсказка" id="76"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа3" id="34">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="35"/>
+							<ChildItems>
+								<InputField name="ПоступлениеТоваровИУслуг" id="5">
+									<DataPath>ПоступлениеТоваровИУслуг</DataPath>
+									<ContextMenu name="ПоступлениеТоваровИУслугКонтекстноеМеню" id="6"/>
+									<ExtendedTooltip name="ПоступлениеТоваровИУслугРасширеннаяПодсказка" id="7"/>
+								</InputField>
+								<Button name="ВыбратьПоРегистратору" id="36">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВыбратьПоРегистратору</CommandName>
+									<ExtendedTooltip name="ВыбратьПоРегистраторуРасширеннаяПодсказка" id="37"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ПересчитатьИтогиПоРегистру" id="3">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПересчитатьИтогиПоРегистру</CommandName>
+							<ExtendedTooltip name="ПересчитатьИтогиПоРегиструРасширеннаяПодсказка" id="4"/>
+						</Button>
+						<InputField name="Организация" id="81">
+							<DataPath>Организация</DataPath>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="83"/>
+						</InputField>
+						<Button name="ПолучитьДанныеИзРегистра" id="84">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПолучитьДанныеИзРегистра</CommandName>
+							<ExtendedTooltip name="ПолучитьДанныеИзРегистраРасширеннаяПодсказка" id="85"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Продолжение" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжение</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПродолжениеРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<Button name="Остатки" id="58">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Остатки</CommandName>
+							<ExtendedTooltip name="ОстаткиРасширеннаяПодсказка" id="59"/>
+						</Button>
+						<Button name="Обороты" id="62">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Обороты</CommandName>
+							<ExtendedTooltip name="ОборотыРасширеннаяПодсказка" id="63"/>
+						</Button>
+						<Button name="ОстаткиИОбороты" id="60">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОстаткиИОбороты</CommandName>
+							<ExtendedTooltip name="ОстаткиИОборотыРасширеннаяПодсказка" id="61"/>
+						</Button>
+						<InputField name="ЕщеОдинПериод" id="68">
+							<DataPath>ЕщеОдинПериод</DataPath>
+							<ContextMenu name="ЕщеОдинПериодКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="ЕщеОдинПериодРасширеннаяПодсказка" id="70"/>
+						</InputField>
+						<SpreadSheetDocumentField name="ТабДок" id="55">
+							<DataPath>ТабДок</DataPath>
+							<VerticalScrollBar>true</VerticalScrollBar>
+							<HorizontalScrollBar>true</HorizontalScrollBar>
+							<ContextMenu name="ТабДокКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="57"/>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="Пр1" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пр1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пр1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="Пр1РасширеннаяПодсказка" id="65"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РаботаСРегистрами2</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПоступлениеТоваровИУслуг" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление товаров и услуг</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПоступлениеТоваровИУслуг</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="НаДату" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На дату</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>НаДату</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Валюта" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+			<Save>
+				<Field>Валюта</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Курс" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Курс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>4</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Курс</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВыбТовар" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выб товар</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТабДок" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕщеОдинПериод" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Еще один период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Организация" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПросмотрСтруктурыБазы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр структуры базы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр структуры базы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПросмотрСтруктурыБазы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПересчитатьИтогиПоРегистру" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пересчитать итоги по регистру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пересчитать итоги по регистру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПересчитатьИтогиПоРегистру</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроведениеВМодулеДокумента" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проведение в модуле документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проведение в модуле документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроведениеВМодулеДокумента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПерепрповестиРеализ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перепрповести реализ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перепрповести реализ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерепрповестиРеализ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаписатьКурс" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать курс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать курс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьКурс</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоказатьКурс" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать курс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать курс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьКурс</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаписатьКурсМенеджер" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать курс менеджер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать курс менеджер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьКурсМенеджер</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьПоРегистратору" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать по регистратору</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать по регистратору</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьПоРегистратору</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьПоРегистру" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать по регистру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать по регистру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьПоРегистру</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СрезПервыхПоТовару" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срез первых по товару</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срез первых по товару</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СрезПервыхПоТовару</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СрезПоследнихпоТовару" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срез последнихпо товару</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срез последнихпо товару</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СрезПоследнихпоТовару</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Остатки" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остатки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остатки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Остатки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОстаткиИОбороты" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остатки и обороты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остатки и обороты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОстаткиИОбороты</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Обороты" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обороты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обороты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обороты</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ТестОтображения" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест отображения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест отображения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестОтображения</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьКурсы" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать курсы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать курсы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьКурсы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаписатьДокументы" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьДокументы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПереформироватьДвижения" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переформировать движения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переформировать движения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПереформироватьДвижения</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОчиститьРегистр" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить регистр</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить регистр</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьРегистр</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткытьСписокВалют" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Откыть список валют</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Откыть список валют</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткытьСписокВалют</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьДанныеИзРегистра" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные из регистра</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные из регистра</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДанныеИзРегистра</Action>
+		</Command>
+		<Command name="УдалитьВсеКурсыПоВыбраннойВалюте" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все курсы по выбранной валюте</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все курсы по выбранной валюте</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьВсеКурсыПоВыбраннойВалюте</Action>
+		</Command>
+	</Commands>
+</Form>
